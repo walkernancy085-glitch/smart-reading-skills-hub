@@ -1,0 +1,2512 @@
+/* =========================================================
+   SMART READING SKILLS HUB
+   PROFESSIONAL WEBSITE STYLES
+   Ghanaian • Interactive • Learner-Centred
+========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff8d6;
+    color: #263238;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+
+.site-header {
+    background: linear-gradient(135deg, #006b3f, #07552f);
+    color: white;
+    border-bottom: 5px solid #f4c430;
+}
+
+.header-content {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f4c430;
+    color: #006b3f;
+
+    border-radius: 16px;
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo-area h1 {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.logo-area p {
+    margin-top: 3px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   3. NAVIGATION
+========================================================= */
+
+.main-nav {
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.nav-content {
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.nav-content a {
+    position: relative;
+
+    padding: 12px 17px;
+
+    color: #344054;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    border-radius: 10px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-content a:hover {
+    background: #fff0a3;
+    color: #006b3f;
+    transform: translateY(-2px);
+}
+
+.nav-content a.active {
+    background: #006b3f;
+    color: white;
+}
+
+.nav-content a.active:hover {
+    background: #07552f;
+    color: white;
+}
+
+
+/* =========================================================
+   4. GENERAL LABELS
+========================================================= */
+
+.section-label,
+.hero-label {
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.section-label {
+    color: #006b3f;
+}
+
+.hero-label {
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #006b3f;
+    color: white;
+
+    box-shadow: 0 5px 14px rgba(0, 107, 63, 0.18);
+}
+
+
+/* =========================================================
+   5. SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    max-width: 780px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 8px 0 12px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    color: #12372a;
+}
+
+.section-heading p {
+    color: #5d6870;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   6. BUTTONS
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 23px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #006b3f;
+    color: white;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.btn:hover {
+    background: #07552f;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 22px rgba(0, 107, 63, 0.22);
+}
+
+.btn-primary {
+    background: #006b3f;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #006b3f;
+
+    border: 2px solid #006b3f;
+}
+
+.btn-secondary:hover {
+    background: #006b3f;
+    color: white;
+}
+
+
+/* =========================================================
+   7. HOME HERO
+========================================================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8d6,
+            #fff0a3,
+            #f4c430
+        );
+
+    padding: 75px 20px;
+}
+
+.hero-content {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+.hero-text h2 {
+    margin: 18px 0;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.05;
+
+    color: #006b3f;
+}
+
+.hero-text p {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    color: #44515a;
+
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 24px;
+
+    border: 7px solid white;
+
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.16);
+}
+
+.hero-image::after {
+    content: "GHANA • LEARN • GROW";
+
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    padding: 9px 14px;
+
+    background: #006b3f;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   8. GENERAL PAGE HERO
+========================================================= */
+
+.page-hero,
+.inner-page-hero,
+.activities-hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8d6,
+            #fff0a3,
+            #f4c430
+        );
+
+    padding: 65px 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(0, 107, 63, 0.15);
+}
+
+.page-hero h2,
+.inner-page-hero h2,
+.activities-hero h2 {
+    margin: 14px auto;
+
+    font-size: clamp(38px, 5vw, 54px);
+
+    line-height: 1.1;
+
+    color: #006b3f;
+}
+
+.page-hero p,
+.inner-page-hero p,
+.activities-hero p {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+
+    color: #4d5961;
+}
+
+
+/* =========================================================
+   9. HOME INTRO
+========================================================= */
+
+.intro-section {
+    padding: 75px 20px;
+    background: #fffdf1;
+}
+
+.learning-tip {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 22px 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    background: white;
+
+    border-left: 6px solid #f4c430;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.tip-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff0a3;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   10. LEARNING CARDS
+========================================================= */
+
+.learning-space {
+    padding: 80px 20px;
+
+    background: #fff8d6;
+}
+
+.learning-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.learning-card {
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+
+    background: #fff0a3;
+}
+
+.learning-card h3 {
+    margin-bottom: 10px;
+
+    color: #173d2e;
+
+    font-size: 19px;
+}
+
+.learning-card p {
+    color: #667078;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.learning-card a {
+    color: #006b3f;
+
+    font-weight: 800;
+
+    font-size: 14px;
+}
+
+.card-green {
+    border-top: 5px solid #006b3f;
+}
+
+.card-blue {
+    border-top: 5px solid #2f80ed;
+}
+
+.card-gold {
+    border-top: 5px solid #f4c430;
+}
+
+.card-purple {
+    border-top: 5px solid #7657d9;
+}
+
+
+/* =========================================================
+   11. QUICK START
+========================================================= */
+
+.quick-start-section {
+    padding: 80px 20px;
+
+    background: white;
+}
+
+.steps-grid {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.step-item {
+    position: relative;
+
+    padding: 28px;
+
+    text-align: center;
+
+    background: #fff8d6;
+
+    border-radius: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-6px);
+}
+
+.step-number {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #006b3f;
+    color: white;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.step-item h3 {
+    color: #006b3f;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   12. LEARNING PATH
+========================================================= */
+
+.reading-path {
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #006b3f,
+            #07552f
+        );
+
+    color: white;
+}
+
+.reading-path .section-label {
+    color: #f4c430;
+}
+
+.reading-path .section-heading h2 {
+    color: white;
+}
+
+.reading-path .section-heading p {
+    color: rgba(255,255,255,0.8);
+}
+
+.path-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.path-card {
+    padding: 25px;
+
+    background: rgba(255,255,255,0.1);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.path-card:hover {
+    transform: translateY(-7px);
+
+    background: rgba(255,255,255,0.16);
+}
+
+.path-icon {
+    display: inline-flex;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    background: #f4c430;
+    color: #006b3f;
+
+    font-weight: 900;
+}
+
+.path-card h3 {
+    margin-bottom: 8px;
+}
+
+.path-card p {
+    color: rgba(255,255,255,0.8);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   13. CTA
+========================================================= */
+
+.cta-section {
+    padding: 65px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0a3,
+            #f4c430
+        );
+}
+
+.cta-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.cta-content h2 {
+    margin: 12px 0;
+
+    font-size: 35px;
+
+    color: #006b3f;
+}
+
+.cta-content p {
+    margin-bottom: 25px;
+
+    color: #4d5961;
+}
+
+
+/* =========================================================
+   14. LESSONS
+========================================================= */
+
+.lessons-section,
+.lessons-intro,
+.activities-section {
+    padding: 75px 20px;
+
+    background: #fff8d6;
+}
+
+.lesson-path {
+    max-width: 1000px;
+
+    margin: 0 auto 45px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.lesson-path-item {
+    padding: 18px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 7px 20px rgba(0,0,0,0.06);
+}
+
+.lesson-path-number {
+    width: 38px;
+    height: 38px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #006b3f;
+    color: white;
+
+    font-weight: 800;
+}
+
+.lesson-path-arrow {
+    display: none;
+}
+
+.interactive-lesson {
+    max-width: 950px;
+
+    margin: 0 auto 18px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+
+    transition: box-shadow 0.3s ease;
+}
+
+.interactive-lesson:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.11);
+}
+
+.lesson-toggle {
+    width: 100%;
+
+    border: none;
+
+    background: white;
+
+    padding: 22px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-align: left;
+
+    transition: background 0.25s ease;
+}
+
+.lesson-toggle:hover {
+    background: #fff9df;
+}
+
+.lesson-number {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #006b3f;
+    color: white;
+
+    font-weight: 900;
+}
+
+.lesson-title {
+    flex: 1;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    color: #173d2e;
+}
+
+.lesson-arrow {
+    font-size: 22px;
+
+    color: #006b3f;
+
+    transition: transform 0.3s ease;
+}
+
+.interactive-lesson.open .lesson-arrow {
+    transform: rotate(180deg);
+}
+
+.lesson-content {
+    display: none;
+
+    padding: 0 28px 30px;
+
+    border-top: 1px solid #eee;
+
+    animation: fadeSlide 0.3s ease;
+}
+
+.interactive-lesson.open .lesson-content {
+    display: block;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lesson-content-heading {
+    margin: 25px 0 15px;
+
+    color: #006b3f;
+}
+
+.lesson-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.lesson-info-card {
+    padding: 18px;
+
+    background: #fff8d6;
+
+    border-radius: 14px;
+}
+
+.example-card {
+    padding: 20px;
+
+    background: #eef8f2;
+
+    border-left: 5px solid #006b3f;
+
+    border-radius: 12px;
+
+    margin-top: 18px;
+}
+
+.lesson-tip {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: #fff0a3;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   15. LEARNING ACTIVITIES
+========================================================= */
+
+.activities-section {
+    background: #fff8d6;
+}
+
+.activity-progress {
+    max-width: 950px;
+
+    margin: 0 auto 35px;
+
+    padding: 22px 25px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+.progress-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+
+    color: #173d2e;
+}
+
+.progress-bar {
+    height: 13px;
+
+    background: #e6eadf;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006b3f,
+            #f4c430
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.5s ease;
+}
+
+.activity-card {
+    max-width: 950px;
+
+    margin: 0 auto 28px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.activity-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    margin-bottom: 18px;
+}
+
+.activity-number {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #006b3f;
+    color: white;
+
+    font-size: 20px;
+    font-weight: 900;
+
+    box-shadow: 0 7px 16px rgba(0,107,63,0.18);
+}
+
+.activity-skill {
+    color: #7657d9;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.activity-card h3 {
+    margin-top: 3px;
+
+    color: #173d2e;
+
+    font-size: 22px;
+}
+
+.activity-instruction {
+    margin-bottom: 23px;
+
+    color: #59656d;
+}
+
+.reading-passage,
+.word-card,
+.game-question,
+.detail-hunt,
+.mystery-box,
+.sequence-box,
+.strategy-card,
+.read-aloud-box {
+    padding: 23px;
+
+    margin-top: 18px;
+
+    background: #fffaf0;
+
+    border-radius: 16px;
+
+    border: 1px solid #f1e6bd;
+}
+
+.reading-passage h4,
+.word-card h4,
+.game-question h4,
+.strategy-card h4 {
+    color: #006b3f;
+
+    margin-bottom: 12px;
+}
+
+.reading-passage p {
+    margin-bottom: 14px;
+
+    color: #4e5a61;
+}
+
+.choice-button,
+.detail-choice {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 16px;
+
+    margin: 10px 0;
+
+    text-align: left;
+
+    background: white;
+
+    border: 2px solid #e1e6df;
+
+    border-radius: 11px;
+
+    color: #344054;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.choice-button:hover,
+.detail-choice:hover {
+    border-color: #006b3f;
+
+    background: #eef8f2;
+
+    transform: translateX(4px);
+}
+
+.choice-button.correct,
+.detail-choice.correct {
+    background: #e5f6eb;
+
+    border-color: #249653;
+
+    color: #126b38;
+}
+
+.choice-button.incorrect,
+.detail-choice.incorrect {
+    background: #fff0f0;
+
+    border-color: #ce1126;
+
+    color: #a10d1d;
+}
+
+.feedback {
+    margin-top: 12px;
+
+    font-weight: 700;
+}
+
+.activity-complete {
+    margin-top: 24px;
+
+    padding: 13px 21px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #006b3f;
+
+    color: white;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.activity-complete:hover {
+    background: #07552f;
+
+    transform: translateY(-2px);
+}
+
+.activity-complete.completed {
+    background: #f4c430;
+
+    color: #173d2e;
+}
+
+
+/* =========================================================
+   16. TEXT AREAS
+========================================================= */
+
+textarea {
+    width: 100%;
+
+    min-height: 120px;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    resize: vertical;
+
+    border: 2px solid #e1e6df;
+
+    border-radius: 12px;
+
+    background: white;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+textarea:focus {
+    border-color: #006b3f;
+
+    box-shadow: 0 0 0 4px rgba(0,107,63,0.08);
+}
+
+.check-writing {
+    margin-top: 12px;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2f80ed;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   17. STORY LIBRARY
+========================================================= */
+
+.story-choice-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.story-choice-grid button {
+    min-height: 120px;
+
+    padding: 20px;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf4,
+            #fff0a3
+        );
+
+    border: 2px solid transparent;
+
+    border-radius: 16px;
+
+    color: #173d2e;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.story-choice-grid button:hover {
+    transform: translateY(-5px);
+
+    border-color: #006b3f;
+
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.story-choice-grid button.selected {
+    border-color: #006b3f;
+
+    background: #eef8f2;
+}
+
+.story-choice-grid strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #006b3f;
+}
+
+.story-choice-grid span {
+    font-size: 13px;
+
+    color: #667078;
+}
+
+.selected-story {
+    margin-top: 22px;
+
+    padding: 23px;
+
+    background: #eef8f2;
+
+    border-left: 5px solid #006b3f;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   18. REFLECTION
+========================================================= */
+
+.reflection-box {
+    max-width: 950px;
+
+    margin: 45px auto 0;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff8d6
+        );
+
+    border-radius: 22px;
+
+    border: 2px solid #f4c430;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+}
+
+.reflection-box h2 {
+    margin: 10px 0;
+
+    color: #006b3f;
+}
+
+.reflection-options {
+    display: grid;
+
+    gap: 12px;
+
+    margin: 25px 0;
+}
+
+.reflection-options label {
+    padding: 14px 17px;
+
+    background: white;
+
+    border: 1px solid #e4e7df;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.reflection-options label:hover {
+    background: #fff0a3;
+}
+
+
+/* =========================================================
+   19. RESOURCES
+========================================================= */
+
+.resources-section,
+.resources-container {
+    padding: 70px 20px;
+}
+
+.resource-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+
+    border-top: 5px solid #006b3f;
+
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-video {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.resource-video iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* =========================================================
+   20. FOOTER
+========================================================= */
+
+.site-footer {
+    background: #12372a;
+
+    color: white;
+
+    padding: 50px 20px 20px;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-about h3,
+.footer-links h3 {
+    margin-bottom: 13px;
+
+    color: #f4c430;
+}
+
+.footer-about p {
+    max-width: 500px;
+
+    color: rgba(255,255,255,0.75);
+}
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.78);
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #f4c430;
+}
+
+.footer-bottom {
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   21. RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .path-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        max-width: 800px;
+
+        margin: 0 auto;
+    }
+
+    .lesson-path {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-choice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .header-content {
+        min-height: 85px;
+    }
+
+    .logo-area h1 {
+        font-size: 20px;
+    }
+
+    .nav-content {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding: 8px 0;
+    }
+
+    .nav-content a {
+        flex-shrink: 0;
+    }
+
+    .hero-section {
+        padding: 55px 20px;
+    }
+
+    .hero-image img {
+        height: 380px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .learning-grid,
+    .path-grid,
+    .lesson-path,
+    .story-choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h2 {
+        font-size: 40px;
+    }
+
+    .page-hero h2,
+    .inner-page-hero h2,
+    .activities-hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .activity-card {
+        padding: 22px;
+    }
+
+    .activity-heading {
+        align-items: flex-start;
+    }
+
+    .progress-top {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .reflection-box {
+        padding: 25px;
+    }/* =========================================================
+   LESSONS PAGE - PACKED & INTERACTIVE DESIGN
+========================================================= */
+
+
+/* ---------- LESSONS INTRO ---------- */
+
+.lessons-intro {
+    background:
+        radial-gradient(circle at top left, rgba(244,196,48,0.35), transparent 28%),
+        linear-gradient(135deg, #fff8d6, #fff0a3);
+
+    padding: 65px 20px;
+}
+
+.lessons-intro .section-heading h2 {
+    color: #006b3f;
+}
+
+
+/* ---------- LESSON PATH ---------- */
+
+.lesson-path {
+    max-width: 1050px;
+    margin: 35px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.lesson-path-item {
+    position: relative;
+
+    padding: 25px 18px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border: 2px solid transparent;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.lesson-path-item:hover {
+    transform: translateY(-7px);
+
+    border-color: #f4c430;
+
+    box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.lesson-path-number {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #006b3f;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: 900;
+}
+
+.lesson-path-item h3 {
+    color: #006b3f;
+
+    margin-bottom: 7px;
+}
+
+.lesson-path-item p {
+    color: #667078;
+
+    font-size: 14px;
+}
+
+.lesson-path-arrow {
+    display: none;
+}
+
+
+/* =========================================================
+   LESSONS SECTION
+========================================================= */
+
+.lessons-section {
+    padding: 75px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff8d6 0%,
+            #fffdf1 45%,
+            #fff8d6 100%
+        );
+}
+
+
+/* ---------- LESSON CARD ---------- */
+
+.interactive-lesson {
+    max-width: 1050px;
+
+    margin: 0 auto 20px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 2px solid #eee8cc;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.interactive-lesson:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 14px 32px rgba(0,0,0,0.10);
+}
+
+.interactive-lesson.open {
+    border-color: #f4c430;
+
+    box-shadow:
+        0 18px 40px rgba(0,107,63,0.13);
+}
+
+
+/* ---------- LESSON BUTTON ---------- */
+
+.lesson-toggle {
+    width: 100%;
+
+    min-height: 82px;
+
+    padding: 15px 22px;
+
+    border: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #fffdf2
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-align: left;
+
+    transition: background 0.25s ease;
+}
+
+.lesson-toggle:hover {
+    background: #fff8d6;
+}
+
+.lesson-number {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #006b3f;
+    color: white;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    box-shadow: 0 6px 14px rgba(0,107,63,0.18);
+}
+
+.lesson-title {
+    flex: 1;
+
+    color: #173d2e;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+.lesson-arrow {
+    color: #006b3f;
+
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.interactive-lesson.open .lesson-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   LESSON CONTENT
+========================================================= */
+
+.interactive-lesson .lesson-content {
+    display: none;
+
+    padding: 30px;
+
+    border-top: 1px solid #eee6c9;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fffdf4
+        );
+}
+
+.interactive-lesson.open .lesson-content {
+    display: block;
+
+    animation: lessonOpen 0.35s ease;
+}
+
+@keyframes lessonOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ---------- MINI LABEL ---------- */
+
+.mini-label {
+    color: #ce1126;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ---------- CONTENT HEADING ---------- */
+
+.lesson-content-heading {
+    margin: 8px 0 15px;
+
+    color: #006b3f;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+}
+
+.lesson-content > p {
+    max-width: 900px;
+
+    color: #56636a;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.lesson-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin: 25px 0;
+}
+
+.lesson-info-card {
+    padding: 22px;
+
+    background: #fff8d6;
+
+    border-radius: 16px;
+
+    border-left: 5px solid #f4c430;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.lesson-info-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 9px 20px rgba(0,0,0,0.07);
+}
+
+.lesson-info-card h4 {
+    margin-bottom: 8px;
+
+    color: #006b3f;
+
+    font-size: 17px;
+}
+
+.lesson-info-card p {
+    color: #5d6870;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   EXAMPLE BOX
+========================================================= */
+
+.example-card {
+    margin-top: 22px;
+
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef8f2,
+            #f7fff9
+        );
+
+    border-left: 6px solid #006b3f;
+
+    border-radius: 16px;
+
+    box-shadow: 0 7px 20px rgba(0,0,0,0.05);
+}
+
+.example-card h4 {
+    margin-bottom: 13px;
+
+    color: #006b3f;
+
+    font-size: 18px;
+}
+
+.example-card p {
+    margin-bottom: 10px;
+
+    color: #4e5b62;
+}
+
+
+/* =========================================================
+   READING TIP
+========================================================= */
+
+.lesson-tip {
+    margin-top: 22px;
+
+    padding: 18px 21px;
+
+    background: #fff0a3;
+
+    border-radius: 14px;
+
+    border-left: 5px solid #f4c430;
+
+    color: #4c4c35;
+}
+
+.lesson-tip strong {
+    color: #006b3f;
+}
+
+
+/* =========================================================
+   SUPPORTING VIDEO
+========================================================= */
+
+.supporting-video-player {
+    margin-top: 30px;
+
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8d6,
+            #ffffff
+        );
+
+    border: 2px solid #f4c430;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.video-heading {
+    margin-bottom: 18px;
+}
+
+.video-heading span {
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: #ce1126;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.3px;
+}
+
+.video-heading h4 {
+    margin-bottom: 5px;
+
+    color: #006b3f;
+
+    font-size: 21px;
+}
+
+.video-heading p {
+    color: #667078;
+
+    font-size: 14px;
+}
+
+.lesson-video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #111;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.lesson-video iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+.video-unavailable {
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px dashed #d7b52d;
+
+    border-radius: 15px;
+}
+
+.video-unavailable > div {
+    font-size: 35px;
+
+    margin-bottom: 8px;
+}
+
+.video-unavailable h4 {
+    color: #006b3f;
+
+    margin-bottom: 6px;
+}
+
+.video-unavailable p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #667078;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   READING STORY LIBRARY
+========================================================= */
+
+.lesson-story-library {
+    margin-top: 30px;
+
+    padding: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8d6,
+            #fffdf3
+        );
+
+    border-radius: 20px;
+
+    border: 2px solid #f4c430;
+}
+
+.lesson-story-library .section-heading {
+    margin-bottom: 25px;
+}
+
+.lesson-story-library .section-heading h3 {
+    font-size: 27px;
+
+    color: #006b3f;
+}
+
+
+/* ---------- STORY BUTTONS ---------- */
+
+.story-choice-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.story-choice {
+    width: 100%;
+
+    min-height: 95px;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: left;
+
+    background: white;
+
+    border: 2px solid #e8e1c5;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.story-choice:hover {
+    transform: translateY(-4px);
+
+    border-color: #006b3f;
+
+    background: #f7fff9;
+
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.story-choice-number {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #006b3f;
+    color: white;
+
+    font-weight: 900;
+}
+
+.story-choice strong {
+    display: block;
+
+    color: #173d2e;
+
+    margin-bottom: 4px;
+}
+
+.story-choice small {
+    color: #667078;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   STORY DISPLAY
+========================================================= */
+
+.lesson-story-display {
+    margin-top: 22px;
+
+    min-height: 230px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 17px;
+
+    border: 2px solid #e9e4ce;
+
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.story-placeholder {
+    min-height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.story-placeholder-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    background: #fff0a3;
+
+    border-radius: 18px;
+
+    font-size: 30px;
+}
+
+.story-placeholder h3 {
+    color: #006b3f;
+
+    margin-bottom: 5px;
+}
+
+.story-placeholder p {
+    color: #667078;
+}
+
+
+/* =========================================================
+   NEXT STEP
+========================================================= */
+
+.lesson-next-section {
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #006b3f,
+            #07552f
+        );
+}
+
+.lesson-next-step {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: white;
+}
+
+.lesson-next-step .section-label {
+    color: #f4c430;
+}
+
+.lesson-next-step h2 {
+    margin: 12px 0;
+
+    color: white;
+
+    font-size: 36px;
+}
+
+.lesson-next-step p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: rgba(255,255,255,0.82);
+}
+
+.lesson-next-step .btn {
+    background: #f4c430;
+
+    color: #173d2e;
+}
+
+.lesson-next-step .btn:hover {
+    background: white;
+
+    color: #006b3f;
+}
+
+
+/* =========================================================
+   FOCUS / ACCESSIBILITY
+========================================================= */
+
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+    outline: 3px solid #2f80ed;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   LESSONS RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .lesson-path {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .lesson-path {
+        grid-template-columns: 1fr;
+    }
+
+    .interactive-lesson .lesson-content {
+        padding: 22px 18px 25px;
+    }
+
+    .lesson-toggle {
+        min-height: 72px;
+
+        padding: 13px 15px;
+
+        gap: 12px;
+    }
+
+    .lesson-number {
+        width: 43px;
+        height: 43px;
+
+        border-radius: 12px;
+    }
+
+    .lesson-title {
+        font-size: 16px;
+    }
+
+    .lesson-arrow {
+        font-size: 17px;
+    }
+
+    .lesson-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-story-library {
+        padding: 20px 15px;
+    }
+
+    .story-choice {
+        padding: 15px;
+    }
+
+    .lesson-next-step h2 {
+        font-size: 29px;
+    }
+
+}
+}

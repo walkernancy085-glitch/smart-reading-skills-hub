@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Activities | Smart Reading Skills Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <div class="logo-area">
+                <div class="logo-icon">📖</div>
+
+                <div>
+                    <h1>Smart Reading Skills Hub</h1>
+                    <p>Reading support for Basic 5 learners</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+
+        <div class="container nav-content">
+
+            <a href="index.html">Home</a>
+
+            <a href="lessons.html">Lessons</a>
+
+            <a href="activities.html" class="active">
+                Learning Activities
+            </a>
+
+            <a href="assessment.html">
+                Assessment &amp; Feedback
+            </a>
+
+            <a href="resources.html">
+                Resources
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+<section class="activities-hero">
+
+    <div class="container activities-hero-content">
+
+        <span class="hero-label">
+            LEARN • PLAY • PRACTISE
+        </span>
+
+        <h2>
+            Make Reading an Adventure
+        </h2>
+
+        <p>
+            Put your reading skills into action through interactive
+            challenges. Read, think, choose, discover and learn from
+            your answers.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#activities" class="btn btn-primary">
+                Start Practising
+            </a>
+
+            <a href="lessons.html" class="btn btn-secondary">
+                Review Lessons
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+                <h2>Learning Activities</h2>
+
+                <p>
+                    Put your reading skills into action through fun,
+                    interactive challenges. Read, think, choose, discover
+                    and learn from your answers.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVITY INTRO -->
+        <section class="activities-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        YOUR CHALLENGE
+                    </span>
+
+                    <h2>Become a Reading Explorer</h2>
+
+                    <p>
+                        Each activity matches a skill from the Lessons page.
+                        Complete the challenges at your own pace and check
+                        your answers as you learn.
+                    </p>
+
+                </div>
+
+
+                <!-- PROGRESS -->
+                <div class="activity-progress">
+
+                    <div class="progress-top">
+                        <strong>Reading Explorer Progress</strong>
+                        <span id="progressText">0 of 10 completed</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY 1 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            1
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 1 • Reading Comprehension
+                            </span>
+
+                            <h3>🕵️ Story Detective</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Read the passage carefully. Then use the clues
+                        from the story to answer the questions.
+                    </p>
+
+
+                    <div class="reading-passage">
+
+                        <h4>The Community Reading Club</h4>
+
+                        <p>
+                            Every Saturday morning, Ama and her classmates
+                            meet at the community centre in their town to
+                            read together. The reading club was started by
+                            their teacher, Mr. Mensah, because he wanted the
+                            children to develop a love for books and improve
+                            their reading skills.
+                        </p>
+
+                        <p>
+                            The community centre is close to the school and
+                            has a small reading area with tables, chairs and
+                            shelves. Although there are not many books, the
+                            learners share the available books and take turns
+                            reading.
+                        </p>
+
+                        <p>
+                            One Saturday, the group read a story about a
+                            farmer in the Eastern Region who planted cocoa,
+                            plantain and vegetables. After reading the story,
+                            the learners discussed the main idea and
+                            identified new words.
+                        </p>
+
+                        <p>
+                            At the end of the lesson, Mr. Mensah asked the
+                            learners to explain what they had learnt. The
+                            children agreed that reading together made
+                            learning more enjoyable.
+                        </p>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Question 1</h4>
+
+                        <p>
+                            Why did Mr. Mensah start the reading club?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            To sell books
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            To help children improve their reading skills
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            To teach farming
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Question 2</h4>
+
+                        <p>
+                            Where did the learners meet?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            At the market
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            At the community centre
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            On a farm
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 2 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            2
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 2 • Vocabulary
+                            </span>
+
+                            <h3>🔤 Word Explorer</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Explore the words from the reading passage.
+                        Choose the meaning that best matches each word.
+                    </p>
+
+
+                    <div class="word-card">
+
+                        <h4>WORD: AVAILABLE</h4>
+
+                        <p>
+                            “The learners shared the available books.”
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Books that are lost
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Books that are ready to be used
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Books that are expensive
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="word-card">
+
+                        <h4>WORD: IMPROVE</h4>
+
+                        <p>
+                            What does “improve” mean?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            To become better
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            To stop learning
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            To become smaller
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="word-card">
+
+                        <h4>WORD MATCH</h4>
+
+                        <p>
+                            Which word has a similar meaning to
+                            <strong>centre</strong>?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Farm
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Place
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Book
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 3 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            3
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 3 • Main Idea &amp; Supporting Details
+                            </span>
+
+                            <h3>💡 Main Idea Mission</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Read the paragraph and choose the idea that best
+                        tells what the whole paragraph is about.
+                    </p>
+
+
+                    <div class="reading-passage">
+
+                        <p>
+                            Kojo enjoys reading storybooks. He visits the
+                            reading area after school and borrows books
+                            about Ghanaian families, wildlife and farming.
+                            He also shares interesting stories with his
+                            classmates.
+                        </p>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Choose the Main Idea</h4>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Kojo likes farming.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Kojo enjoys reading and sharing stories.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Kojo visits a farm.
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Choose a Suitable Title</h4>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Kojo's Favourite Food
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Kojo Loves Reading
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            A Day on the Farm
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 4 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            4
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 3 • Supporting Details
+                            </span>
+
+                            <h3>🔎 Detail Hunt</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Find the details that support the main idea.
+                        Select the details that belong to the paragraph.
+                    </p>
+
+
+                    <div class="detail-hunt">
+
+                        <p>
+                            <strong>Main Idea:</strong>
+                            Reading regularly helps learners develop
+                            their reading skills.
+                        </p>
+
+                        <button class="detail-choice"
+                                onclick="toggleDetail(this, true)">
+                            Learners practise reading every Saturday.
+                        </button>
+
+                        <button class="detail-choice"
+                                onclick="toggleDetail(this, false)">
+                            Kojo likes football.
+                        </button>
+
+                        <button class="detail-choice"
+                                onclick="toggleDetail(this, true)">
+                            Learners read and discuss stories together.
+                        </button>
+
+                        <button class="detail-choice"
+                                onclick="toggleDetail(this, false)">
+                            Ama bought a new pair of shoes.
+                        </button>
+
+                        <button class="detail-choice"
+                                onclick="toggleDetail(this, true)">
+                            Learners identify new words.
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 5 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            5
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 4 • Inference &amp; Prediction
+                            </span>
+
+                            <h3>🧩 Mystery Clues</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Use the clues to work out what is happening.
+                    </p>
+
+
+                    <div class="mystery-box">
+
+                        <h4>🌧️ Mystery Situation</h4>
+
+                        <p>
+                            The sky is dark. Ama sees farmers covering
+                            their crops. Some people are carrying umbrellas.
+                        </p>
+
+                        <p>
+                            <strong>
+                                What do you think will happen?
+                            </strong>
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            It may rain.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            It will become very hot.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Everyone will go swimming.
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Why did you choose that answer?</h4>
+
+                        <textarea
+                            placeholder="Write the clues that helped you..."></textarea>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 6 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            6
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 5 • Sequencing &amp; Cause and Effect
+                            </span>
+
+                            <h3>🧩 Put It in Order</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Choose the correct order of events.
+                    </p>
+
+
+                    <div class="sequence-box">
+
+                        <p>
+                            A group of learners visits the reading centre.
+                        </p>
+
+                        <p>
+                            Which event happened first?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            The learners choose books.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            The learners discuss the story.
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            The learners explain what they learnt.
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>Cause or Effect?</h4>
+
+                        <p>
+                            The learners practised reading regularly,
+                            so their reading skills improved.
+                        </p>
+
+                        <p>
+                            What was the cause?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Practising reading regularly
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Improved reading skills
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 7 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            7
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 6 • Reading Strategies
+                            </span>
+
+                            <h3>🎯 Reading Strategy Challenge</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Choose the reading strategy that would help in
+                        each situation.
+                    </p>
+
+
+                    <div class="strategy-card">
+
+                        <h4>Challenge A</h4>
+
+                        <p>
+                            You want to quickly find the name “Ama” in
+                            a long passage.
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Scanning
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Rereading every sentence
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Writing a summary
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="strategy-card">
+
+                        <h4>Challenge B</h4>
+
+                        <p>
+                            You do not understand an important paragraph.
+                            What should you do?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Skip the whole book
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Reread the paragraph carefully
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Close your book immediately
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 8 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            8
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 7 • Summarising
+                            </span>
+
+                            <h3>✂️ Summary Builder</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Read the short passage and write only the
+                        important points.
+                    </p>
+
+
+                    <div class="reading-passage">
+
+                        <p>
+                            Every Saturday, learners meet at the community
+                            centre to read. They share books, discuss
+                            stories and learn new words. Their teacher
+                            encourages them to continue reading so that
+                            they can improve their skills.
+                        </p>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <h4>
+                            Build Your Summary
+                        </h4>
+
+                        <textarea
+                            placeholder="Write 1–2 sentences summarising the passage..."></textarea>
+
+                        <button class="check-writing"
+                                onclick="showWritingFeedback(this)">
+                            Check My Summary
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 9 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            9
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 8 • Reading Fluency
+                            </span>
+
+                            <h3>🎤 Read Aloud Challenge</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Read the sentence aloud. Pay attention to
+                        pronunciation, pace, pauses and expression.
+                    </p>
+
+
+                    <div class="read-aloud-box">
+
+                        <p class="large-reading-text">
+                            “Are you coming to the reading club on Saturday?”
+                        </p>
+
+                        <div class="fluency-checks">
+
+                            <label>
+                                <input type="checkbox">
+                                I pronounced the words clearly.
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                I used the correct pace.
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                I paused correctly.
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                I used appropriate expression.
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 10 -->
+                <div class="activity-card play-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            10
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 9 • Types of Text
+                            </span>
+
+                            <h3>🗂️ Text Detective</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Identify the type of text from the description.
+                    </p>
+
+
+                    <div class="game-question">
+
+                        <p>
+                            “The school notice tells learners that the
+                            reading club will meet on Saturday at 9:00 a.m.”
+                        </p>
+
+                        <p>
+                            What type of text is this?
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            Notice
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Poem
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            Story
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <div class="game-question">
+
+                        <p>
+                            A text about how cocoa is grown and harvested
+                            is most likely:
+                        </p>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            A dialogue
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, true)">
+                            An informational text
+                        </button>
+
+                        <button class="choice-button"
+                                onclick="checkChoice(this, false)">
+                            A poem
+                        </button>
+
+                        <div class="feedback"></div>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- ACTIVITY 11: READING LIBRARY -->
+                <div class="activity-card play-activity library-activity">
+
+                    <div class="activity-heading">
+
+                        <div class="activity-number">
+                            11
+                        </div>
+
+                        <div>
+                            <span class="activity-skill">
+                                Lesson 10 • Reading Library
+                            </span>
+
+                            <h3>📚 Choose &amp; Read</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="activity-instruction">
+                        Choose a story from the Reading Library. Read it
+                        carefully and complete the mini reading mission.
+                    </p>
+
+
+                    <div class="story-choice-grid">
+
+                        <button onclick="selectStory(this, 'Community Reading Club')">
+                            <strong>Community Reading Club</strong>
+                            <span>Reading together</span>
+                        </button>
+
+                        <button onclick="selectStory(this, 'The Cocoa Farmer’s Morning')">
+                            <strong>The Cocoa Farmer’s Morning</strong>
+                            <span>Farming and daily life</span>
+                        </button>
+
+                        <button onclick="selectStory(this, 'Ama’s Visit to the Market')">
+                            <strong>Ama’s Visit to the Market</strong>
+                            <span>Life in the community</span>
+                        </button>
+
+                        <button onclick="selectStory(this, 'The Homowo Celebration')">
+                            <strong>The Homowo Celebration</strong>
+                            <span>Culture and celebration</span>
+                        </button>
+
+                        <button onclick="selectStory(this, 'The Helpful Classmate')">
+                            <strong>The Helpful Classmate</strong>
+                            <span>Friendship and teamwork</span>
+                        </button>
+
+                        <button onclick="selectStory(this, 'Protecting Our Environment')">
+                            <strong>Protecting Our Environment</strong>
+                            <span>Caring for our surroundings</span>
+                        </button>
+
+                    </div>
+
+
+                    <div id="selectedStory" class="selected-story">
+
+                        <h4>Your Reading Mission</h4>
+
+                        <p>
+                            Choose a story above to begin.
+                        </p>
+
+                    </div>
+
+
+                    <button class="activity-complete"
+                            onclick="completeActivity(this)">
+                        ✓ Complete Challenge
+                    </button>
+
+                </div>
+
+
+                <!-- REFLECTION -->
+                <div class="reflection-box">
+
+                    <span class="section-label">
+                        FINAL REFLECTION
+                    </span>
+
+                    <h2>🌱 Think About Your Learning</h2>
+
+                    <p>
+                        You have completed several reading challenges.
+                        Take a moment to think about your progress.
+                    </p>
+
+
+                    <div class="reflection-options">
+
+                        <label>
+                            <input type="radio" name="reflection">
+                            😊 I understood the activities very well.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="reflection">
+                            🙂 I understood most of the activities.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="reflection">
+                            🤔 I need more practice.
+                        </label>
+
+                    </div>
+
+
+                    <label class="reflection-question">
+                        What is one reading skill you improved today?
+
+                        <textarea
+                            placeholder="Write your answer here..."></textarea>
+                    </label>
+
+                </div>
+
+
+                <!-- FINAL CTA -->
+                <div class="cta-section" style="margin-top: 50px; border-radius: 20px;">
+
+                    <div class="cta-content">
+
+                        <span class="section-label">
+                            NEXT STEP
+                        </span>
+
+                        <h2>
+                            Ready to Check Your Skills?
+                        </h2>
+
+                        <p>
+                            Take the assessment and see how much you have
+                            learnt.
+                        </p>
+
+                        <a href="assessment.html" class="btn">
+                            Go to Assessment
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-about">
+
+                    <h3>
+                        Smart Reading Skills Hub
+                    </h3>
+
+                    <p>
+                        An interactive reading learning space designed to
+                        support Basic 5 learners in Ghana.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="lessons.html">Lessons</a>
+
+                    <a href="activities.html">
+                        Learning Activities
+                    </a>
+
+                    <a href="assessment.html">
+                        Assessment &amp; Feedback
+                    </a>
+
+                    <a href="resources.html">
+                        Resources
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Smart Reading Skills Hub
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
